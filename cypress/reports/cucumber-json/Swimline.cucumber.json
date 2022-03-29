@@ -1,0 +1,335 @@
+[
+  {
+    "description": "    Validating Login for Swimline",
+    "keyword": "Feature",
+    "name": "Swimline login",
+    "line": 1,
+    "id": "swimline-login",
+    "tags": [],
+    "uri": "Swimline.feature",
+    "elements": [
+      {
+        "id": "swimline-login;intial-load-login-screen-validation",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Intial load Login Screen Validation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 43904000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I Should validate labels in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 9537000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I Should validate buttons in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I Should validate headers and Subheaders in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 191000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimline-login;login-with-valid-details-using-datable",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login with Valid details using Datable",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 29354000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Username",
+                      "Password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "sagar.tatipally",
+                      "F*@5jM5RDX5m"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I enter",
+            "result": {
+              "status": "passed",
+              "duration": 12887000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on login button in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I Should validate Dashboard Url and title",
+            "result": {
+              "status": "passed",
+              "duration": 3993000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimline-login;login-with-valid-details-using-hardcoded-paramertes-in-feature-file",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Login with Valid details using hardcoded paramertes in feature file",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 22964000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter username and password as \"sagar.tatipally\" and \"F*@5jM5RDX5m\" in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 10428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click on login button in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 1094000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I Should validate Dashboard Url and title",
+            "result": {
+              "status": "passed",
+              "duration": 5489000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimline-login;login-with-valid-details-using-environment-variables-from-cypress-json-file",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login with Valid details using Environment variables from cypress json file",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 37157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I enter username and password in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 27779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I click on login button in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 656000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I Should validate Dashboard Url and title",
+            "result": {
+              "status": "passed",
+              "duration": 7812000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimline-login;login-with-multiple-testdata-using-examples",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Login with Multiple testdata using Examples",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 42166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I enter username and password as \"sagar.tatipally\" and \"welcome\" in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 15649000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I click on login button in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 3503000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I validate login failed error message",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimline-login;login-with-multiple-testdata-using-examples",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Login with Multiple testdata using Examples",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the Simline login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 41373000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I enter username and password as \"welcome\" and \"sagar.tatipally\" in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 13722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I click on login button in the login Screen",
+            "result": {
+              "status": "passed",
+              "duration": 483000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I validate login failed error message",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
