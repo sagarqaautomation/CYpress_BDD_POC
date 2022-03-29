@@ -21,7 +21,7 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 }
 const cucumber = require("cypress-cucumber-preprocessor").default; 
-
+//npm install --save-dev cypress-cucumber-preprocessor
 module.exports = (on) => {
   on("file:preprocessor", cucumber());
 };
