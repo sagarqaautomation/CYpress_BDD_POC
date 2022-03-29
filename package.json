@@ -7,7 +7,9 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:chrome:smoke": "cypress-tags run --browser chrome --headed \"TAGS=@smoke\""
+    "cy:run:chrome:smoke": "cypress-tags run --browser chrome --headed \"TAGS=@smoke\"",
+    "Report":"node cucumber-html-report.js",
+    "cy:run:chrome:smoke:Report": "cypress-tags run --browser chrome --headed \"TAGS=@smoke\" Report"
   },
   "author": "sagar",
   "license": "ISC",
