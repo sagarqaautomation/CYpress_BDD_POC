@@ -37,21 +37,9 @@ class employeeActions {
       .invoke("text")
       .then((text) => {
         cy.writeFile("cypress\\fixtures\\example.json", {
-          recordid: text,
+          recordid: text.replace(/\n\s+/g,'').replace('Copy link',''),
         });
       });
-  }
-
-  static click_NewSubmission_label() {
-    employee.getNewEmployeSubmission_Label().click();
-  }
-
-  static ValidateNewlyCreatedRecord() {
-    cy.fixture("example.json").then(function (data) {
-      this.data = data;
-      console.log(this.data.recordid);
-      cy.contains(this.data.recordid);
-    });
   }
 }
 

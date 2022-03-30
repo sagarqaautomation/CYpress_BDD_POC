@@ -12,7 +12,7 @@ Cypress.Commands.add("navigateToUrl", (url) => {
   cy.visit(url);
 });
 
-Cypress.Commands.add("ValidateURL", (URL) => {
+Cypress.Commands.add("validateURL", (URL) => {
   cy.url().should("include", URL);
 });
 

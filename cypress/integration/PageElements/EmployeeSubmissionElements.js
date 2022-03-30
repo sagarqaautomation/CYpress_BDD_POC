@@ -1,4 +1,3 @@
-
 const employeeSubmission = require("../../integration/PageElements/Locaters/EmployeeSubmission.json");
 class EmployeeSubmissionElements {
   getNewEmployeSubmission() {

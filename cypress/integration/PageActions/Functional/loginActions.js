@@ -40,7 +40,7 @@ class loginActions {
   }
 
   static CurrentURl() {
-    cy.ValidateURL(Cypress.env("Dashboard"));
+    cy.validateURL(Cypress.env("Dashboard"));
   }
 
   static loginButton() {

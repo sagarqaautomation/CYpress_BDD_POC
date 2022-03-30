@@ -1,5 +1,4 @@
 class GenericMethods {
-
   /** make an http call with the parameters */
   request(method, url, body, statusCode) {
     return cy.request(method, url, body).then((response) => {

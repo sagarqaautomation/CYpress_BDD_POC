@@ -2,6 +2,7 @@
 node_modules/
 screenshots/
 videos/
+reports/
 # ignore log files and databases
 *.log
 *.sql

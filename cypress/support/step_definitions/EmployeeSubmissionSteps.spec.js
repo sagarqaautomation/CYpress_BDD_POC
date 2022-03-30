@@ -1,4 +1,8 @@
-import { Given, And, Then, When } from "cypress-cucumber-preprocessor/steps";
+import {
+  And,
+  Then,
+  When,
+} from "cypress-cucumber-preprocessor/steps";
 import employeeActions from "../../integration/PageActions/Functional/EmployeeSubmissionActions";
 
 When("I click on New Submission plus icon", () => {
@@ -16,12 +20,4 @@ And("I click on save button", () => {
 
 Then("I should save the newly created Record", () => {
   employeeActions.getNewRecord();
-});
-
-When("I navigate to New Employee Submission Record", () => {
-  employeeActions.click_NewSubmission_label();
-});
-
-Then("I should validate the record is created Succesuful", () => {
-  employeeActions.ValidateNewlyCreatedRecord();
 });

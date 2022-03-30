@@ -1,7 +1,12 @@
-import { Given, And, Then, When } from "cypress-cucumber-preprocessor/steps";
+import {
+  Given,
+  And,
+  Then,
+  When,
+} from "cypress-cucumber-preprocessor/steps";
 import loginActions from "../../integration/PageActions/Functional/loginActions";
 
-Given("I launch the Simline login Screen", () => {
+Given("I launch the swimlane login Screen", () => {
   loginActions.launchURL();
 });
 

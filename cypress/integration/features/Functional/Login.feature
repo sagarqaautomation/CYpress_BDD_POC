@@ -1,9 +1,9 @@
-Feature: Swimline login
+Feature: Login Page Validation
 
-    Validating Login for Swimline
+    Validating swimlane login screen
 
     Background: Login Screen
-        Given I launch the Simline login Screen
+        Given I launch the swimlane login Screen
 
     Scenario: Intial load Login Screen Validation
         Then I Should validate labels in the login Screen
@@ -16,6 +16,7 @@ Feature: Swimline login
             | sagar.tatipally | F*@5jM5RDX5m |
         And I click on login button in the login Screen
         Then I Should validate Dashboard Url and title
+
     @smoke
     Scenario: Login with Valid details using hardcoded paramertes in feature file
         When I enter username and password as "sagar.tatipally" and "F*@5jM5RDX5m" in the login Screen

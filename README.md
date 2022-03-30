@@ -5,13 +5,19 @@ Cypress GitHub Integration
 ```bash
 npm install
 ```
-
-2.How to run the bundled tests from CLI:
+2.Please install below plugin for html report
+```bash
+npm install multiple-cucumber-html-reporter --save-dev
+```
+3.Please install below plugin for Cucumber Support
+```bash
+npm install --save-dev cypress-cucumber-preprocessor
+```
+4.How to run the bundled tests from CLI:
 ```bash
 npm run cy:run
 ```
-
-3.How to run the bundled tests from Cypress Test Runner:
+5.How to open the bundled tests from Cypress Test Runner:
 ```bash
 npm open cy:open
 ```
