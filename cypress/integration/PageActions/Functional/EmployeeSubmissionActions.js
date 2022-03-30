@@ -36,7 +36,7 @@ class employeeActions {
       .getNewlyCreatedRecord()
       .invoke("text")
       .then((text) => {
-        cy.writeFile("cypress\\fixtures\\example.json", {
+        cy.writeFile("cypress\\fixtures\\employeeTrackingId.json", {
           recordid: text.replace(/\n\s+/g,'').replace('Copy link',''),
         });
       });

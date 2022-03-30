@@ -15,7 +15,7 @@ class UserTokenGenerateAPI {
       .request("POST", loginURL, body, statusCode)
       .then((response) => {
         this.token = response.body.token;
-        cy.writeFile("cypress\\fixtures\\example.json", {
+        cy.writeFile("cypress\\fixtures\\userToken.json", {
           token: this.token,
         });
       });
