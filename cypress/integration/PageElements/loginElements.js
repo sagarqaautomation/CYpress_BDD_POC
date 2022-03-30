@@ -1,6 +1,6 @@
 const loginscreen = require("../../integration/PageElements/Locaters/login.json");
 
-class loginElements {
+class LoginElements {
   getWelocmeText() {
     return cy.contains(loginscreen.login_Header);
   }
@@ -24,4 +24,4 @@ class loginElements {
   }
 }
 
-export default loginElements;
+export default LoginElements;

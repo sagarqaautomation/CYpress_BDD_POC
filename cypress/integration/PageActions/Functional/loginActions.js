@@ -1,8 +1,8 @@
-import loginElements from "../../PageElements/loginElements";
+import LoginElements from "../../PageElements/LoginElements";
 
-const login = new loginElements();
+const login = new LoginElements();
 
-class loginActions {
+class LoginActions {
   static launchURL() {
     cy.navigateToUrl(Cypress.env("loginURL"));
   }
@@ -48,8 +48,8 @@ class loginActions {
   }
 
   static loginFailed() {
-    login.getLoginFailed().should("eq", "Login failed.");
+    login.getLoginFailed();
   }
 }
 
-export default loginActions;
+export default LoginActions;

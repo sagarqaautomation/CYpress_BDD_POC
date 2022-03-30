@@ -1,7 +1,7 @@
 import EmployeeSubmissionElements from "../../PageElements/EmployeeSubmissionElements";
 const employee = new EmployeeSubmissionElements();
 
-class employeeActions {
+class EmployeeActions {
   static click_NewEmployeeSubmission() {
     employee.getNewEmployeSubmission().click();
   }
@@ -43,4 +43,4 @@ class employeeActions {
   }
 }
 
-export default employeeActions;
+export default EmployeeActions;

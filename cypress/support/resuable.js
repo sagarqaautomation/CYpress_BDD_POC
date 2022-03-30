@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import loginElements from "../integration/PageElements/loginElements";
+import loginElements from "../integration/PageElements/LoginElements";
 
 const login = new loginElements();
 
