@@ -3,8 +3,8 @@ import {
   Then,
   When,
 } from "cypress-cucumber-preprocessor/steps";
-import UserTokenGenerateAPI from "../../integration/PageActions/API/UserTokenGenerateAPI";
-import APIValidation from "../../integration/PageActions/API/POST_GET_DELETE_API";
+import UserTokenGenerateAPI from "../../automationFrameork/PageActions/API/UserTokenGenerateAPI";
+import APIValidation from "../../automationFrameork/PageActions/API/POST_GET_DELETE_API";
 
 When(
   "I should do {string} call with login User details and Save the Token",

@@ -1,5 +1,5 @@
 import { Given, And, Then, When } from "cypress-cucumber-preprocessor/steps";
-import LoginActions from "../../integration/PageActions/Functional/LoginActions";
+import LoginActions from "../../automationFrameork/PageActions/Functional/LoginActions";
 
 Given("I launch the swimlane login Screen", () => {
   LoginActions.launchURL();

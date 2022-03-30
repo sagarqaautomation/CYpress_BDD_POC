@@ -1,4 +1,4 @@
-const loginscreen = require("../../integration/PageElements/Locaters/login.json");
+const loginscreen = require("./Locaters/login.json");
 
 class LoginElements {
   getWelocmeText() {

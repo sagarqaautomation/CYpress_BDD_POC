@@ -1,4 +1,4 @@
-const employeeSubmission = require("../../integration/PageElements/Locaters/EmployeeSubmission.json");
+const employeeSubmission = require("./Locaters/EmployeeSubmission.json");
 class EmployeeSubmissionElements {
   getNewEmployeSubmission() {
     return cy

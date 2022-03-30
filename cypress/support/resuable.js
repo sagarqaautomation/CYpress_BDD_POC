@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import loginElements from "../integration/PageElements/LoginElements";
+import loginElements from "../automationFrameork/PageElements/LoginElements";
 
 const login = new loginElements();
 

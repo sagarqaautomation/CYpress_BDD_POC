@@ -3,7 +3,7 @@ import {
   Then,
   When,
 } from "cypress-cucumber-preprocessor/steps";
-import EmployeeActions from "../../integration/PageActions/Functional/EmployeeSubmissionActions";
+import EmployeeActions from "../../automationFrameork/PageActions/Functional/EmployeeSubmissionActions";
 
 When("I click on New Submission plus icon", () => {
   EmployeeActions.click_NewEmployeeSubmission();
