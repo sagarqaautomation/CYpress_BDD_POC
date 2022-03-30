@@ -1,6 +1,6 @@
 Feature: Login Page Validation
 
-    Validating swimlane login screen
+    Validating Swimlane login screen
 
     Background: Login Screen
         Given I launch the swimlane login Screen

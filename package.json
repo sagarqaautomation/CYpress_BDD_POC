@@ -7,9 +7,13 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:chrome:smoke": "cypress-tags run --browser chrome --headed \"TAGS=@smoke\"",
-    "Report": "node cucumber-html-report.js",
-    "cy:run:chrome:smoke:Report": "cypress-tags run --browser chrome --headed \"TAGS=@smoke\" Report"
+    "cy:run:chrome:smoke": "cypress-tags run --browser chrome --headed --env \"TAGS=@Smoke\"",
+    "cy:run:chrome:regression": "cypress-tags run --browser chrome --headed --env \"TAGS=@Regression\"",
+    "cy:report": "node cucumber-html-report.js",
+    "cy:clean-reports": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
+    "cy:clean-screenshots": "if exist cypress\\screenshots rmdir /S/Q cypress\\screenshots",
+    "cy:clean-videos": "if exist cypress\\videos rmdir /S/Q cypress\\videos",
+    "cy:pretest": "npm run cy:clean-screenshots && npm run cy:clean-reports &&  npm run cy:clean-videos"
   },
   "author": "sagar",
   "license": "ISC",

@@ -1,4 +1,4 @@
-Feature: Swimline API
+Feature: Swimlane API
 
    API Validation for create,get and deleted
 
