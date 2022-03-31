@@ -7,6 +7,7 @@ Feature: Employee Submission
         When I enter username and password in the login Screen
         And I click on login button in the login Screen
 
+    @Functional @EmployeeSubmission
     Scenario: Create a New Employee Submission
         When I click on New Submission plus icon
         And I enter the required fields in New Record Screen
